@@ -1,0 +1,20 @@
+@import "./variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.navLink {
+  color: $red;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 57px;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}

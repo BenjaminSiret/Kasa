@@ -1,5 +1,9 @@
+@import "src/styles/Home.scss";
+@import "src/styles/Navbar.scss";
+
 body {
-  margin: 0;
+  margin: auto;
+  max-width: 1240px;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
