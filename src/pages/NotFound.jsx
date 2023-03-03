@@ -1,8 +1,16 @@
+import { Link } from "react-router-dom";
+
 export default function NotFound() {
   return (
-    <div>
-      <h2>404</h2>
-      <p>Oups! La page que vous demandez n'existe pas</p>
+    <div id='not-found-page'>
+      <h2 className='error-code'>404</h2>
+      <p className='error-text'>Oups! La page que vous demandez n'existe pas</p>
+      <Link
+        to='/'
+        className='home-link'
+      >
+        Retourner sur la page d'accueil
+      </Link>
     </div>
   );
 }

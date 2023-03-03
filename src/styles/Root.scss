@@ -1,6 +1,13 @@
+@import "./variables.scss";
+
 main {
   max-width: 1240px;
-  background-color: grey;
-  text-align: center;
   margin: auto;
+}
+
+body {
+  color: $red;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
