@@ -1,9 +1,10 @@
 @import "src/styles/Home.scss";
-@import "src/styles/Navbar.scss";
+@import "src/styles/Header.scss";
+@import "src/styles/Footer.scss";
+@import "src/styles/Root.scss";
 
 body {
   margin: auto;
-  max-width: 1240px;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
