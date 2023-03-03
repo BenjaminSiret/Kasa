@@ -18,9 +18,10 @@ const browserRouter = createBrowserRouter(
       <Route
         index
         element={<Home />}
+        component={Appartment}
       />
       <Route
-        path='appartment/:id'
+        path='/appartments/:id'
         element={<Appartment />}
       />
       <Route

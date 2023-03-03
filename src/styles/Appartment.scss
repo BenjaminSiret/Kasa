@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.tags-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.tag {
+  margin-right: 20px;
+  background-color: $red;
+  padding: 4px 32px;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+
+  &-description {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}

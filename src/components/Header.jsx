@@ -14,14 +14,14 @@ export default function Header() {
             <NavLink
               to='/'
               className='navLink'
-              activeClassName='active'
+              // activeclassName='active'
             >
               Accueil
             </NavLink>
             <NavLink
               to='about'
               className='navLink'
-              activeClassName='active'
+              // activeclassName='active'
             >
               A propos
             </NavLink>
