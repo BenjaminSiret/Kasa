@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import appartments from "../data/appartments";
+import Banner from "../components/Banner";
 
 export default function Home() {
   return (
-    <div>
+    <div id='home'>
+      <Banner />
       <ul>
         {appartments.map((appartment) => (
           <li key={appartment.id}>
