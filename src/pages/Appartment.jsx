@@ -14,8 +14,13 @@ export default function Appartment(props) {
       <h2>{appartment.title}</h2>
       <p>{appartment.location}</p>
       <ul className='tags-list'>
-        {appartment.tags.map((tag) => (
-          <li className='tag'>{tag}</li>
+        {appartment.tags.map((tag, index) => (
+          <li
+            key={index}
+            className='tag'
+          >
+            {tag}
+          </li>
         ))}
       </ul>
       <p>Description</p>

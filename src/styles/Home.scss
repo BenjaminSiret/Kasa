@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.appartments-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  grid-gap: 50px 60px;
+  padding: 56px 50px;
+  background-color: $grey;
+  border-radius: 25px;
+}
+
+.appartment-card {
+  grid-column: span 2;
+}
+
+.appartment-card:nth-last-child(2) {
+  grid-column: span 3;
+}

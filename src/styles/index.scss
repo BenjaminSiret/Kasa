@@ -5,10 +5,20 @@
 @import "src/styles/NotFound.scss";
 @import "src/styles/Appartment.scss";
 @import "src/styles/Banner.scss";
+@import "src/styles/Card.scss";
 
 body {
   margin: auto;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
 }
