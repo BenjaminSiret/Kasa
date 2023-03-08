@@ -6,7 +6,7 @@ export default function Card(props) {
         alt='appartment-img'
         className='card-image'
       />
-      {/* <p className='title'>{props.appartment.title}</p> */}
+      <p className='title'>{props.appartment.title}</p>
     </div>
   );
 }

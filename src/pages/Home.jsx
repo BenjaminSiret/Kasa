@@ -13,7 +13,10 @@ export default function Home() {
             className='appartment-card'
             key={appartment.id}
           >
-            <Link to={`/appartments/${appartment.id}`}>
+            <Link
+              className='card-link'
+              to={`/appartments/${appartment.id}`}
+            >
               <Card appartment={appartment} />
             </Link>
           </li>
