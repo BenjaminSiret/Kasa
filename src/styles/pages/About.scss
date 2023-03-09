@@ -1,39 +1,5 @@
 @import "../utils/variables.scss";
 
-.chevron-open {
-  transform: rotate(180deg);
-}
-
-.dropdownContainer {
-  max-width: 1023px;
-  margin: auto;
-}
-
-.dropdown-title {
-  background-color: $red;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 9px 16px;
-}
-
-.about-title {
-  color: white;
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0;
-}
-
-.about-text {
-  font-size: 24px;
-}
-.dropdown-open {
-  display: block;
-  background-color: $grey;
-  padding: 36px 18px;
-}
-
-.dropdown-close {
-  display: none;
+.collapse {
+  margin-bottom: 30px;
 }

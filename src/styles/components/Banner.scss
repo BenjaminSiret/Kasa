@@ -1,18 +1,21 @@
-.banner {
-  margin: 68px 0 43px;
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(0.75);
 }
 
-.banner-text-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../../assets/banner.png);
+.banner-container {
+  position: relative;
   height: 223px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
 }
 
 .banner-text {
+  position: absolute;
   font-size: 48px;
   font-weight: 500;
   color: white;

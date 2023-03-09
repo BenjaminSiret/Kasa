@@ -1,5 +1,3 @@
-@import "src/styles/layout/Root.scss";
-
 @import "src/styles/pages/Home.scss";
 @import "src/styles/pages/NotFound.scss";
 @import "src/styles/pages/About.scss";
@@ -9,14 +7,27 @@
 @import "src/styles/components/Footer.scss";
 @import "src/styles/components/Banner.scss";
 @import "src/styles/components/Card.scss";
+@import "src/styles/components/Collapse.scss";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
 body {
   margin: auto;
+  color: $red;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
   box-sizing: border-box;
+}
+
+main {
+  max-width: 1240px;
+  margin: auto;
 }
 
 li {

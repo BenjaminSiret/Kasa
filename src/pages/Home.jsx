@@ -2,11 +2,18 @@ import { Link } from "react-router-dom";
 import appartments from "../data/appartments";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
+import bannerHome from "../assets/bannerHome.png";
 
 export default function Home() {
+  const bannerTitle = "Chez vous, partout et ailleurs";
+
   return (
     <div id='home'>
-      <Banner />
+      <Banner
+        image={bannerHome}
+        text={bannerTitle}
+        className='banner'
+      />
       <ul className='appartments-list'>
         {appartments.map((appartment) => (
           <li
