@@ -3,11 +3,11 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import RootLayout from "../layout/RootLayout";
 import Home from "../pages/Home";
 import Appartment from "../pages/Appartment";
 import About from "../pages/About";
-import NotFound from "../pages/NotFound";
-import RootLayout from "../layout/RootLayout";
+import ErrorBoundary from "../pages/ErrorBoundary";
 
 const browserRouter = createBrowserRouter(
   createRoutesFromElements(
@@ -30,7 +30,7 @@ const browserRouter = createBrowserRouter(
       />
       <Route
         path='*'
-        element={<NotFound />}
+        element={<ErrorBoundary />}
       />
     </Route>
   )

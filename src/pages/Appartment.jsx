@@ -1,11 +1,13 @@
 import appartments from "../data/appartments";
 import { useParams } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 export default function Appartment(props) {
   const { id } = useParams();
 
   const appartment = appartments.find((appartment) => appartment.id === id);
-  return (
+
+  return appartment ? (
     <div id='appartment'>
       <img
         src={appartment.cover}
@@ -26,5 +28,7 @@ export default function Appartment(props) {
       <p>Description</p>
       <p className='tag-description'>{appartment.description}</p>
     </div>
+  ) : (
+    <Navigate to='*' />
   );
 }
