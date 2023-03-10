@@ -1,3 +1,5 @@
+@import "src/styles/layout/RootLayout.scss";
+
 @import "src/styles/pages/Home.scss";
 @import "src/styles/pages/NotFound.scss";
 @import "src/styles/pages/About.scss";
@@ -8,12 +10,6 @@
 @import "src/styles/components/Banner.scss";
 @import "src/styles/components/Card.scss";
 @import "src/styles/components/Collapse.scss";
-
-#root {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
 
 body {
   margin: auto;
@@ -27,7 +23,9 @@ body {
 
 main {
   max-width: 1240px;
+  width: 100%;
   margin: auto;
+  flex-grow: 1;
 }
 
 li {
