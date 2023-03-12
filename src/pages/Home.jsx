@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import appartments from "../data/appartments";
+import { Link, useOutletContext } from "react-router-dom";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import bannerHome from "../assets/bannerHome.png";
 
-export default function Home() {
+export default function Home(props) {
   const bannerTitle = "Chez vous, partout et ailleurs";
+  const [appartments] = useOutletContext();
 
   return (
     <div id='home'>

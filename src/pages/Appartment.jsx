@@ -1,10 +1,8 @@
-import appartments from "../data/appartments";
-import { useParams } from "react-router-dom";
-import { Navigate } from "react-router-dom";
+import { useParams, Navigate, useOutletContext } from "react-router-dom";
 
 export default function Appartment(props) {
   const { id } = useParams();
-
+  const [appartments] = useOutletContext();
   const appartment = appartments.find((appartment) => appartment.id === id);
 
   return appartment ? (
