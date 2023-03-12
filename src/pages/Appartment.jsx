@@ -1,11 +1,17 @@
 import { useParams, Navigate, useOutletContext } from "react-router-dom";
+import { isAppartmentIdValid } from "../services/isAppartmentIdValid";
 
 export default function Appartment(props) {
   const { id } = useParams();
   const [appartments] = useOutletContext();
+
+  if (!isAppartmentIdValid(id, appartments)) {
+    return <Navigate to='ErrorBoundary' />;
+  }
+
   const appartment = appartments.find((appartment) => appartment.id === id);
 
-  return appartment ? (
+  return (
     <div id='appartment'>
       <img
         src={appartment.cover}
@@ -26,7 +32,5 @@ export default function Appartment(props) {
       <p>Description</p>
       <p className='tag-description'>{appartment.description}</p>
     </div>
-  ) : (
-    <Navigate to='*' />
   );
 }
