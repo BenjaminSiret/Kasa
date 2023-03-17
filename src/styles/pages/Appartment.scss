@@ -1,10 +1,64 @@
 @import "../utils/variables.scss";
 
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
 .tags-list {
   display: flex;
   list-style-type: none;
   padding: 0;
 }
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 30px 0 0;
+}
+.location,
+.host-name {
+  font-size: 18px;
+}
+
+.host-name {
+  text-align: end;
+}
+
+.host-picture {
+  border-radius: 50%;
+  width: 64px;
+  margin-left: 10px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  width: min-content;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+
+  &-title {
+    font-size: 18px;
+  }
+
+  .collapse {
+    width: 582px;
+    font-size: 18px;
+  }
+}
+
 .tag {
   margin-right: 20px;
   background-color: $red;
@@ -13,9 +67,4 @@
   color: white;
   font-size: 14px;
   font-weight: 500;
-
-  &-description {
-    font-size: 18px;
-    font-weight: 400;
-  }
 }

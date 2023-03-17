@@ -33,6 +33,8 @@ export default function About() {
           <Collapse
             key={item.title}
             className='collapse'
+            textClass='about-text'
+            titleClass='about-title'
             title={item.title}
             text={item.text}
           />
