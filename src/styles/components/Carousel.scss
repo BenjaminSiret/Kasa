@@ -1,0 +1,36 @@
+.previous-arrow,
+.next-arrow {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.previous-arrow {
+  left: 25px;
+}
+
+.next-arrow {
+  right: 25px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.picture {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.counter {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+}

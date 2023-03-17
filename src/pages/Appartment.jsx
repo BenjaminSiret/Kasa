@@ -1,5 +1,6 @@
 import { useParams, Navigate, useOutletContext } from "react-router-dom";
 import { isAppartmentIdValid } from "../services/isAppartmentIdValid";
+import Carousel from "../components/Carousel";
 
 export default function Appartment(props) {
   const { id } = useParams();
@@ -13,10 +14,7 @@ export default function Appartment(props) {
 
   return (
     <div id='appartment'>
-      <img
-        src={appartment.cover}
-        alt='.'
-      />
+      <Carousel appartment={appartment} />
       <h2>{appartment.title}</h2>
       <p>{appartment.location}</p>
       <ul className='tags-list'>
