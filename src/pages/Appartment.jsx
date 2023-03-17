@@ -1,4 +1,5 @@
-import { useParams, Navigate, useOutletContext } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { isAppartmentIdValid } from "../services/isAppartmentIdValid";
 import Carousel from "../components/Carousel";
 import Collapse from "../components/Collapse";
@@ -6,7 +7,8 @@ import Rating from "../components/Rating";
 
 export default function Appartment(props) {
   const { id } = useParams();
-  const [appartments] = useOutletContext();
+  const { state } = useLocation();
+  const appartments = state.appartments;
 
   if (!isAppartmentIdValid(id, appartments)) {
     return <Navigate to='ErrorBoundary' />;
