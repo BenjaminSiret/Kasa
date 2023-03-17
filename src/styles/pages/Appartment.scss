@@ -13,7 +13,7 @@
   padding: 0;
 }
 
-.title {
+.appartment-title {
   font-size: 36px;
   font-weight: 500;
   margin: 30px 0 0;
@@ -43,22 +43,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .description {
   display: flex;
   justify-content: space-between;
-
-  &-title {
-    font-size: 18px;
-  }
-
-  .collapse {
-    width: 582px;
-    font-size: 18px;
-  }
+  margin-top: 34px;
 }
 
+.appartment-collapse {
+  width: 582px;
+  line-height: 1.6;
+
+  &-title,
+  &-text {
+    font-size: 18px;
+  }
+  &-dropdown {
+    height: 170px;
+  }
+}
 .tag {
   margin-right: 20px;
   background-color: $red;

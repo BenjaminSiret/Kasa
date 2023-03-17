@@ -1,5 +1,9 @@
 @import "../utils/variables.scss";
 
+.chevron {
+  cursor: pointer;
+}
+
 .chevron-open {
   transform: rotate(180deg);
 }
@@ -28,6 +32,8 @@
   display: block;
   background-color: $grey;
   padding: 36px 18px;
+  border-radius: 0 0 10px 10px;
+  font-weight: 400;
 }
 
 .dropdown-close {

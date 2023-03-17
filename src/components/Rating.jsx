@@ -7,6 +7,7 @@ export default function Rating(props) {
       <ul>
         {[...Array(parseInt(props.appartment.rating))].map((_, index) => (
           <img
+            key={index}
             src={redStar}
             alt=''
           />
@@ -15,6 +16,7 @@ export default function Rating(props) {
       <ul>
         {[...Array(5 - parseInt(props.appartment.rating))].map((_, index) => (
           <img
+            key={index}
             src={greyStar}
             alt=''
           />

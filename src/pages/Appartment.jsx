@@ -19,7 +19,7 @@ export default function Appartment(props) {
       <Carousel appartment={appartment} />
       <div className='infos'>
         <div className='presentation'>
-          <h2 className='title'>{appartment.title}</h2>
+          <h2 className='appartment-title'>{appartment.title}</h2>
           <p className='location'>{appartment.location}</p>
         </div>
         <div className='host'>
@@ -46,15 +46,18 @@ export default function Appartment(props) {
       </div>
       <div className='description'>
         <Collapse
-          className='collapse'
+          className='appartment-collapse'
           title='Description'
-          titleClass='description-title'
+          titleClass='appartment-collapse-title'
+          textClass='appartment-collapse-text'
+          dropdownClass='appartment-collapse-dropdown'
           text={appartment.description}
         />
         <Collapse
-          className='collapse'
+          className='appartment-collapse'
           title='Equipements'
-          titleClass='equipments-title'
+          titleClass='appartment-collapse-title'
+          dropdownClass='appartment-collapse-dropdown'
           text={appartment.equipments}
         />
       </div>

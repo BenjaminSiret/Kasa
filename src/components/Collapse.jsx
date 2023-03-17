@@ -14,12 +14,24 @@ export default function Collapse(props) {
           <img
             src={chevron}
             alt='chevron'
-            className={isOpen ? "chevron-open" : "chevron-close"}
+            className={`chevron ${isOpen ? "chevron-open" : ""}`}
             onClick={() => setIsOpen(!isOpen)}
           />
         </div>
-        <div className={isOpen ? "dropdown-open" : "dropdown-close"}>
-          <p className={props.textClass}>{props.text}</p>
+        <div
+          className={
+            isOpen ? `dropdown-open ${props.dropdownClass}` : "dropdown-close"
+          }
+        >
+          {Array.isArray(props.text) ? (
+            <ul className='collapse-list'>
+              {props.text.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className={props.textClass}>{props.text}</p>
+          )}
         </div>
       </div>
     </div>

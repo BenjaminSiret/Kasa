@@ -32,7 +32,7 @@ export default function About() {
         return (
           <Collapse
             key={item.title}
-            className='collapse'
+            className='about-collapse'
             textClass='about-text'
             titleClass='about-title'
             title={item.title}
