@@ -57,11 +57,19 @@
   line-height: 1.6;
 
   &-title,
-  &-text {
+  &-text,
+  &-list {
     font-size: 18px;
   }
   &-dropdown {
     height: 170px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 200px;
   }
 }
 .tag {

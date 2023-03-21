@@ -74,6 +74,7 @@ export default function Appartment() {
               title='Equipements'
               titleClass='appartment-collapse-title'
               dropdownClass='appartment-collapse-dropdown'
+              listClass='appartment-collapse-list'
               text={appartment.equipments}
             />
           </div>

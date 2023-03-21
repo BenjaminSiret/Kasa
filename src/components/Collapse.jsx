@@ -24,7 +24,7 @@ export default function Collapse(props) {
           }
         >
           {Array.isArray(props.text) ? (
-            <ul className='collapse-list'>
+            <ul className={props.listClass}>
               {props.text.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
