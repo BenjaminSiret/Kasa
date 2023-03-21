@@ -1,4 +1,4 @@
-import { Link, useOutletContext } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchAllAppartments } from "../services/fetchAllAppartments";
 import Banner from "../components/Banner";
