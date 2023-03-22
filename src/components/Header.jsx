@@ -8,6 +8,7 @@ export default function Header() {
         <img
           src={logo}
           alt='logo'
+          className='logo'
         />
         <div className='navLinks'>
           <NavLink

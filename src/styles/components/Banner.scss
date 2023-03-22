@@ -20,3 +20,22 @@
   font-weight: 500;
   color: white;
 }
+
+@media (max-width: 500px) {
+  .banner-text {
+    font-size: 24px;
+    margin-left: 16px;
+    width: 66%;
+  }
+
+  .banner-container {
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .banner-img {
+    width: 335px;
+    height: 111px;
+    border-radius: 10px;
+  }
+}

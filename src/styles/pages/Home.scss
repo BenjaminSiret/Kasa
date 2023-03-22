@@ -13,10 +13,40 @@
   border-radius: 25px;
 }
 
+.card {
+  margin-bottom: 50px;
+}
+
 .card-link {
   display: block;
 }
 
 .loader {
   position: absolute;
+}
+
+@media (max-width: 500px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appartments-list {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    max-width: 335px;
+    max-height: 255px;
+  }
+
+  .banner {
+    margin-top: 16px;
+    margin-bottom: 22px;
+  }
 }
