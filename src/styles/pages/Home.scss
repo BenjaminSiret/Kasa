@@ -2,6 +2,29 @@
 
 .banner {
   margin: 43px 0 43px;
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(0.75);
+  }
+
+  &-text {
+    position: absolute;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+  }
+
+  &-container {
+    position: relative;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .appartments-list {
@@ -54,5 +77,23 @@
   .banner {
     margin-top: 16px;
     margin-bottom: 22px;
+
+    &-text {
+      font-size: 24px;
+      margin-left: 16px;
+      width: 66%;
+      text-align: start;
+      margin-left: -75px;
+    }
+
+    &-container {
+      height: auto;
+    }
+
+    &-image {
+      width: 335px;
+      height: 111px;
+      border-radius: 10px;
+    }
   }
 }

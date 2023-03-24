@@ -3,12 +3,91 @@
 .about-collapse {
   margin-bottom: 30px;
   font-size: 24px;
-}
 
-.about-text {
-  line-height: 1.4;
+  &-text {
+    line-height: 1.4;
+  }
 }
 
 .about-title {
   font-size: 24px;
+}
+
+.about-banner {
+  margin: 43px 0 43px;
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(0.75);
+  }
+
+  &-text {
+    position: absolute;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+  }
+
+  &-container {
+    position: relative;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.about-dropdown-container {
+  max-width: 1023px;
+  margin: auto;
+}
+
+.about-dropdown-title {
+  background-color: $red;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 16px;
+}
+
+@media (max-width: 500px) {
+  .about-banner {
+    margin-top: 17px;
+    margin-bottom: 19px;
+
+    &-image {
+      object-fit: contain;
+      width: auto;
+      border-radius: 10px;
+    }
+  }
+
+  .about-collapse {
+    margin: auto auto 20px;
+    max-width: 335px;
+
+    &-title {
+      font-size: 13px;
+    }
+
+    &-text {
+      font-size: 12px;
+    }
+  }
+
+  .chevron {
+    max-width: 15px;
+  }
+
+  .about-dropdown-open {
+    display: block;
+    background-color: $grey;
+    padding: 20px 18px 40px;
+    border-radius: 0 0 10px 10px;
+    font-weight: 400;
+  }
 }

@@ -28,7 +28,10 @@ export default function Home(props) {
           <Banner
             image={bannerHome}
             text={bannerTitle}
-            className='banner'
+            bannerClass='banner'
+            bannerContainerClass='banner-container'
+            imageClass='banner-image'
+            textClass='banner-text'
           />
           <ul className='appartments-list'>
             {appartments.map((appartment) => (

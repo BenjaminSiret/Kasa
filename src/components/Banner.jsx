@@ -1,13 +1,13 @@
 export default function Banner(props) {
   return (
-    <div className={props.className}>
-      <div className='banner-container'>
+    <div className={props.bannerClass}>
+      <div className={props.bannerContainerClass}>
         <img
-          className='banner-img'
+          className={props.imageClass}
           src={props.image}
           alt='landscape'
         />
-        {props.text && <h1 className='banner-text'>{props.text}</h1>}
+        {props.text && <h1 className={props.textClass}>{props.text}</h1>}
       </div>
     </div>
   );

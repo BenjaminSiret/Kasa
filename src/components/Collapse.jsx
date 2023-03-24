@@ -6,8 +6,8 @@ export default function Collapse(props) {
 
   return (
     <div className={props.className}>
-      <div className='dropdownContainer'>
-        <div className='dropdown-title'>
+      <div className={props.dropdownContainerClass}>
+        <div className={props.dropdownTitleClass}>
           <h3 className={`collapse-title ${props.titleClass}`}>
             {props.title}
           </h3>
@@ -20,7 +20,9 @@ export default function Collapse(props) {
         </div>
         <div
           className={
-            isOpen ? `dropdown-open ${props.dropdownClass}` : "dropdown-close"
+            isOpen
+              ? `${props.dropdownClass} ${props.dropdownOpenClass} `
+              : "dropdown-close"
           }
         >
           {Array.isArray(props.text) ? (

@@ -25,7 +25,10 @@ export default function About() {
   return (
     <div className='about'>
       <Banner
-        className='banner'
+        bannerClass='about-banner'
+        bannerContainerClass='about-banner-container'
+        imageClass='about-banner-image'
+        textClass='about-banner-text'
         image={bannerAbout}
       />
       {data.map((item) => {
@@ -33,8 +36,11 @@ export default function About() {
           <Collapse
             key={item.title}
             className='about-collapse'
-            textClass='about-text'
-            titleClass='about-title'
+            dropdownContainerClass='about-dropdown-container'
+            dropdownTitleClass='about-dropdown-title'
+            dropdownOpenClass='about-dropdown-open'
+            textClass='about-collapse-text'
+            titleClass='about-collapse-title'
             title={item.title}
             text={item.text}
           />
