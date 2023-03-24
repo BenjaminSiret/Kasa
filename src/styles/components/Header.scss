@@ -26,6 +26,18 @@
   text-decoration: underline;
 }
 
+@media (max-width: 1245px) {
+  #header {
+    width: 96%;
+  }
+}
+
+@media (max-width: 800px) {
+  .navLink {
+    margin-left: 30px;
+  }
+}
+
 @media (max-width: 500px) {
   .navLink {
     font-size: 12px;

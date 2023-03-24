@@ -21,6 +21,12 @@
   color: white;
 }
 
+@media (max-width: 800px) {
+  .banner-text {
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   .banner-text {
     font-size: 24px;
@@ -29,7 +35,6 @@
   }
 
   .banner-container {
-    justify-content: flex-start;
     height: auto;
   }
 
@@ -37,5 +42,10 @@
     width: 335px;
     height: 111px;
     border-radius: 10px;
+  }
+
+  .banner-text {
+    text-align: start;
+    margin-left: -75px;
   }
 }
