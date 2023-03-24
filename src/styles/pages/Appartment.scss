@@ -1,49 +1,62 @@
 @import "../utils/variables.scss";
 
-.infos {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 24px;
+.appartment {
+  &-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 15px 0 0;
+  }
+
+  &-location {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  &-host {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+
+    &-infos {
+      display: flex;
+      align-items: center;
+    }
+
+    &-picture {
+      border-radius: 50%;
+      width: 64px;
+      margin-left: 10px;
+    }
+
+    &-name {
+      font-size: 18px;
+      text-align: end;
+      width: min-content;
+    }
+  }
 }
 
+.rating {
+  margin-top: 20px;
+}
 .tags-list {
   display: flex;
   list-style-type: none;
+  margin-top: 20px;
   padding: 0;
-}
-
-.appartment-title {
-  font-size: 36px;
-  font-weight: 500;
-  margin: 30px 0 0;
-}
-.location,
-.host-name {
-  font-size: 18px;
-}
-
-.host-name {
-  text-align: end;
-}
-
-.host-picture {
-  border-radius: 50%;
-  width: 64px;
-  margin-left: 10px;
-}
-
-.host {
-  display: flex;
-  align-items: center;
-  width: min-content;
 }
 
 .tags {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
 }
 
 .description {

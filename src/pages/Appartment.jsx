@@ -27,38 +27,40 @@ export default function Appartment() {
   }, [id, navigate]);
 
   return (
-    <div id='appartment'>
+    <div className='appartment'>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
         <>
           <Carousel appartment={appartment} />
-          <div className='infos'>
-            <div className='presentation'>
+          <div className='appartment-infos'>
+            <div className='appartment-presentation'>
               <h2 className='appartment-title'>{appartment.title}</h2>
-              <p className='location'>{appartment.location}</p>
+              <p className='appartment-location'>{appartment.location}</p>
+              <div className='tags'>
+                <ul className='tags-list'>
+                  {appartment.tags.map((tag, index) => (
+                    <li
+                      key={index}
+                      className='tag'
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className='host'>
-              <p className='host-name'>{appartment.host.name}</p>
-              <img
-                className='host-picture'
-                src={appartment.host.picture}
-                alt=''
-              />
+            <div className='appartment-host'>
+              <div className='appartment-host-infos'>
+                <p className='appartment-host-name'>{appartment.host.name}</p>
+                <img
+                  className='appartment-host-picture'
+                  src={appartment.host.picture}
+                  alt=''
+                />
+              </div>
+              <Rating appartment={appartment} />
             </div>
-          </div>
-          <div className='tags'>
-            <ul className='tags-list'>
-              {appartment.tags.map((tag, index) => (
-                <li
-                  key={index}
-                  className='tag'
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-            <Rating appartment={appartment} />
           </div>
           <div className='description'>
             <Collapse

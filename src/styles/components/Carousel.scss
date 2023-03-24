@@ -16,10 +16,10 @@
 .carousel {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .picture {
+  position: relative;
   width: 1240px;
   height: 415px;
   object-fit: cover;
@@ -27,10 +27,25 @@
 }
 
 .counter {
+  position: absolute;
   font-weight: 500;
   font-size: 18px;
   color: white;
-  position: absolute;
   left: 50%;
-  bottom: 25px;
+  top: 50%;
 }
+
+@media (max-width: 500px) {
+  .picture {
+    width: 335px;
+    height: 255px;
+    margin: 20px auto auto;
+  }
+
+  .next-arrow,
+  .previous-arrow {
+    width: 12px;
+  }
+}
+
+//TODO: change position for arrows

@@ -1,3 +1,17 @@
 .rating {
   display: flex;
 }
+.rating-list {
+  display: flex;
+}
+
+.star {
+  margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+  .star {
+    margin-right: 5px;
+    width: 15px;
+  }
+}
