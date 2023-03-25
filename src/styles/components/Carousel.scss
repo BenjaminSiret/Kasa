@@ -16,10 +16,10 @@
 .carousel {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .picture {
-  position: relative;
   width: 1240px;
   height: 415px;
   object-fit: cover;
@@ -32,20 +32,42 @@
   font-size: 18px;
   color: white;
   left: 50%;
-  top: 50%;
+  top: 90%;
+}
+
+@media (max-width: 800px) {
+  .picture {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 500px) {
-  .picture {
+  .carousel {
     width: 335px;
     height: 255px;
     margin: 20px auto auto;
+  }
+
+  .picture {
+    width: 100%;
+    height: 100%;
   }
 
   .next-arrow,
   .previous-arrow {
     width: 12px;
   }
-}
 
-//TODO: change position for arrows
+  .next-arrow {
+    right: 10px;
+  }
+
+  .previous-arrow {
+    left: 10px;
+  }
+
+  .counter {
+    display: none;
+  }
+}
