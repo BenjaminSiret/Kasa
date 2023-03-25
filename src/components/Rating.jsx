@@ -15,7 +15,7 @@ export default function Rating(props) {
           </li>
         ))}
       </ul>
-      <ul>
+      <ul className='rating-list'>
         {[...Array(5 - parseInt(props.appartment.rating))].map((_, index) => (
           <li key={index}>
             <img

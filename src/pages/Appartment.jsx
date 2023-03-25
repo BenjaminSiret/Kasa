@@ -65,19 +65,20 @@ export default function Appartment() {
           <div className='description'>
             <Collapse
               className='appartment-collapse'
-              title='Description'
+              dropdownContainerClass='appartment-collapse-dropdown-container'
+              dropdownTitleClass='appartment-collapse-dropdown-title'
               titleClass='appartment-collapse-title'
-              textClass='appartment-collapse-text'
-              dropdownClass='appartment-collapse-dropdown'
               text={appartment.description}
+              title='Description'
             />
             <Collapse
               className='appartment-collapse'
-              title='Equipements'
+              dropdownContainerClass='appartment-collapse-dropdown-container'
+              dropdownTitleClass='appartment-collapse-dropdown-title'
               titleClass='appartment-collapse-title'
-              dropdownClass='appartment-collapse-dropdown'
               listClass='appartment-collapse-list'
               text={appartment.equipments}
+              title='Equipements'
             />
           </div>
         </>

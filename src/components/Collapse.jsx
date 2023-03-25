@@ -21,7 +21,7 @@ export default function Collapse(props) {
         <div
           className={
             isOpen
-              ? `${props.dropdownClass} ${props.dropdownOpenClass} `
+              ? `${props.dropdownOpenClass} dropdown-open`
               : "dropdown-close"
           }
         >

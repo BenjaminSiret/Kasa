@@ -54,14 +54,6 @@
   padding: 9px 16px;
 }
 
-.about-dropdown-open {
-  display: block;
-  background-color: $grey;
-  padding: 36px 18px 40px;
-  border-radius: 0 0 10px 10px;
-  font-weight: 400;
-}
-
 @media (max-width: 500px) {
   .about-banner {
     margin-top: 17px;
@@ -89,9 +81,5 @@
 
   .chevron {
     max-width: 15px;
-  }
-
-  .about-dropdown-open {
-    padding: 20px 18px 40px;
   }
 }

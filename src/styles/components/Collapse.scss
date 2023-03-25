@@ -16,12 +16,23 @@
 
 .dropdown-open {
   display: block;
+  position: relative;
+  z-index: -10;
+  margin-top: -8px;
   background-color: $grey;
-  padding: 36px 18px;
-  border-radius: 0 0 10px 10px;
+  padding: 40px 18px;
+  border-radius: 0 0 5px 5px;
   font-weight: 400;
 }
 
 .dropdown-close {
   display: none;
 }
+
+@media (max-width: 500px) {
+  .dropdown-open {
+    padding: 20px 18px 40px;
+  }
+}
+
+//TODO: ajouter le style collapse en mobile (voir le style collapse de la page about)
