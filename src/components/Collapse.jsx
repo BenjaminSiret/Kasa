@@ -26,13 +26,13 @@ export default function Collapse(props) {
           }
         >
           {Array.isArray(props.text) ? (
-            <ul className={props.listClass}>
+            <ul className='dropdown-text'>
               {props.text.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           ) : (
-            <p className={props.textClass}>{props.text}</p>
+            <p className='dropdown-text'>{props.text}</p>
           )}
         </div>
       </div>

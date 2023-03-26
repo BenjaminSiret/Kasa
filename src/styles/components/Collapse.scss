@@ -29,10 +29,20 @@
   display: none;
 }
 
+.dropdown-text {
+  font-size: 18px;
+}
+
 @media (max-width: 500px) {
   .dropdown-open {
     padding: 20px 18px 40px;
   }
-}
 
-//TODO: ajouter le style collapse en mobile (voir le style collapse de la page about)
+  .collapse-title {
+    font-size: 13px;
+  }
+
+  .dropdown-text {
+    font-size: 12px;
+  }
+}
