@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import Card from "../components/Card";
 import bannerHome from "../assets/bannerHome.png";
 
-export default function Home(props) {
+export default function Home() {
   const bannerTitle = "Chez vous, partout et ailleurs";
   const [appartments, setAppartments] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
