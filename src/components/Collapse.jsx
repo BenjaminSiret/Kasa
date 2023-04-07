@@ -6,7 +6,10 @@ export default function Collapse(props) {
 
   return (
     <div className={props.className}>
-      <div className={props.dropdownContainerClass}>
+      <div
+        className={`dropdown ${props.dropdownContainerClass}`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <div className={props.dropdownTitleClass}>
           <h3 className={`collapse-title ${props.titleClass}`}>
             {props.title}
@@ -15,7 +18,6 @@ export default function Collapse(props) {
             src={chevron}
             alt='chevron'
             className={`chevron ${isOpen ? "chevron-open" : ""}`}
-            onClick={() => setIsOpen(!isOpen)}
           />
         </div>
         <div
